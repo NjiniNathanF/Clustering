@@ -69,11 +69,7 @@ class Link(SensorNode):
 
      #threshold distance, r cost from energy model
      #Model link for each node
-class SinkNode():
-	def __init__(self):
-		self.E = 100000 #Very large amount of energy --- Sink
-		self.coord = 
-		self.
+
 class Network(Link, SensorNode):
      def __init__(self,E_th = 10):
           self.E_th = E_th
@@ -113,7 +109,6 @@ class KMeans:
         self.n_samples, self.n_features = X.shape
         
         # initialize 
-        #random_sample_idxs = SensorNode()
         random_sample_idxs = np.random.choice(self.n_samples, self.K, replace=False)
         self.centroids = [self.X[idx] for idx in random_sample_idxs]
 
